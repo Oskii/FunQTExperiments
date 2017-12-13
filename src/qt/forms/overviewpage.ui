@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>596</width>
-    <height>342</height>
+    <width>825</width>
+    <height>395</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -79,7 +79,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="../bitcoin.qrc">
+               <iconset>
                 <normaloff>:/icons/warning</normaloff>
                 <disabledoff>:/icons/warning</disabledoff>:/icons/warning</iconset>
               </property>
@@ -407,17 +407,39 @@
         </widget>
        </item>
        <item>
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
+        <widget class="QPushButton" name="buttonStartFarming">
+         <property name="font">
+          <font>
+           <family>Franklin Gothic Book</family>
+           <pointsize>18</pointsize>
+          </font>
          </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
+         <property name="text">
+          <string>START FARMING</string>
          </property>
-        </spacer>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowserThankYou">
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#00a666;&quot;&gt;Thank you!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;By farming on the Veggie client, you are generating a 25% coin bonus for the Veggie fund. This fund is used to help animals in need. Thank you for enabling us to help the animals who truly need us.&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can donate directly to the Veggie fund with the button below&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonDonate">
+         <property name="text">
+          <string>Donate to the Veggie fund directly</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -465,7 +487,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="../bitcoin.qrc">
+               <iconset>
                 <normaloff>:/icons/warning</normaloff>
                 <disabledoff>:/icons/warning</disabledoff>:/icons/warning</iconset>
               </property>
@@ -514,21 +536,24 @@
             </property>
            </widget>
           </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
          </layout>
         </widget>
        </item>
        <item>
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
+        <widget class="QGraphicsView" name="graphicsFarm"/>
        </item>
       </layout>
      </item>
